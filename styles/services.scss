@@ -1,0 +1,100 @@
+@import "./style.scss";
+@import "./variables.scss";
+
+#services {
+    grid-area: services;
+}
+
+.services {
+    /*layout*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    &__text {
+        /*layout*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    &__title {
+        /*font*/
+        font-size: 3.5rem;
+        font-weight: 600;
+
+        /*color*/
+        color: hsl(0, 0%, 100%);
+
+        @media (width < 700px) {
+            font-size: 3rem;
+        }
+
+        @media (width < 500px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__paragraph {
+        /*font*/
+        font-size: 1rem;
+
+        /*color*/
+        color: hsl(0, 0%, 39%);
+    }
+
+    &__cards {
+        /*layout*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(15rem, auto);
+        gap: 1rem;
+
+        @media (width < 1200px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (width < 700px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        /*layout*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+
+        /*box model*/
+        border-radius: 0.25rem;
+        padding: 2rem;
+
+        /*color*/
+        background-color: hsl(0, 0%, 10%);
+    }
+
+    &__card-title {
+        /*font*/
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__card-paragraph {
+        font-size: 1rem;
+
+        /*color*/
+        color: hsl(0, 0%, 60%);
+    }
+
+    &__buttons-wrapper {
+        /*layout*/
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
