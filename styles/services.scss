@@ -44,7 +44,7 @@
         font-size: 1rem;
 
         /*color*/
-        color: hsl(0, 0%, 39%);
+        color: $text-light-grey;
     }
 
     &__cards {
@@ -67,7 +67,6 @@
         /*layout*/
         display: flex;
         flex-direction: column;
-        justify-content: center;
         gap: 0.5rem;
 
         /*box model*/

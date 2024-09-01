@@ -13,14 +13,14 @@
     justify-content: space-between;
     gap: 5rem;
 
+    /*box model*/
+    padding: 5rem 0;
+
     @media (width < 700px) {
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
-
-    /*box model*/
-    padding: 5rem 0;
 
     &__about-links > li > a {
         /*font*/
@@ -53,7 +53,7 @@
         font-weight: 500;
 
         /*color*/
-        color: hsl(0, 0%, 39%);
+        color: $text-light-grey;
     }
 
     &__text-socials {
