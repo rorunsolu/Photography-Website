@@ -1,10 +1,44 @@
-@import "./variables.scss";
+:root {
+    --color-white: #fff;
+    --color-grey: #71717a;
+    --color-black: #000;
+
+    --bg-color: rgba(193, 194, 194, 0.11);
+
+    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    --shadow-card: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+
+    --border-white: 1px solid var(--bg-white);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.125);
+    --border-radius: 0.625rem;
+    --padding: 1rem;
+    --gap-card-wrapper: 1.5rem;
+    --gap-card-wrapper-medium: 3rem;
+    --gap-card-wrapper-large: 4.5rem;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-frosted-white: rgba(255, 255, 255, 0.75);
+
+    --bg-frosted-white: rgba(193, 194, 194, 0.11);
+    --bg-frosted-black: rgba(13, 13, 14, 0.5);
+    --bg-frosted-white-secondary: rgba(193, 194, 194, 0.3);
+    --bg-frosted-orange-secondary: rgba(255, 121, 0, 0.75);
+    --bg-gradient: linear-gradient(130deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    --bg-blur: blur(20px);
+    --bg-blur-secondary: blur(5px);
+
+    --box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+
+    --transition: all 0.3s ease-in-out;
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    
+
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -20,26 +54,28 @@ body {
     font-weight: 400;
     line-height: 1.6;
 
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
+    min-height: 100vh;
+
+    position: relative;
+
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+section {
+    padding: 7.5rem 0;
+
+    @media (width < 600px) {
+        padding: 3.5rem 0;
+    }
 }
 
 img {
-    display: block;
+    display: inline-block;
     object-fit: cover;
+    object-position: center;
 
     width: 100%;
-
-    border-radius: 0.5rem;
-}
-
-.container {
-    width: $container-width-lg;
-
-    margin: 0 auto;
-    max-width: 2048px;
-
-    position: relative;
 }
 
 .button {
@@ -61,7 +97,7 @@ img {
         background-color: hsl(0, 0%, 100%);
         color: hsl(0, 0%, 0%);
 
-        transition: $transition;
+        transition: var(--transition);
     }
 }
 
@@ -74,7 +110,7 @@ img {
         background-color: hsl(0, 0%, 10%);
         color: hsl(0, 0%, 100%);
 
-        transition: $transition;
+        transition: var(--transition);
     }
 }
 
@@ -82,9 +118,6 @@ img {
     /*Box Model*/
     border-bottom: 0.1rem solid hsl(0, 0%, 100%);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-    box-sizing: content-box;
 
-    /*Color*/
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    box-sizing: content-box;
 }

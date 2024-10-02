@@ -1,9 +1,4 @@
-@import "./style.scss";
-@import "./variables.scss";
-
 #contact {
-    grid-area: contact;
-
     background-image: url("/images/background.jpg");
     background-size: cover;
     background-position: center;
@@ -22,12 +17,10 @@
         gap: 2rem;
     }
     &__title {
-        /*font*/
         font-size: 3.5rem;
         font-weight: 600;
 
-        /*color*/
-        color: hsl(0, 0%, 100%);
+        color: var(--color-white);
 
         @media (width < 950px) {
             font-size: 3rem;
@@ -42,10 +35,8 @@
         }
     }
     &__paragraph {
-        /*font*/
         font-size: 1rem;
 
-        /*color*/
-        color: hsl(0, 0%, 83%);
+        color: var(--color-grey);
     }
 }

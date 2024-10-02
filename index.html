@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     <meta name="description"
-          content="Explore stunning landscape, portrait, and wildlife photography. Find the perfect photo for your next adventure." />
+          content="Showcasing a diverse portfolio of captivating landscape, portrait, and wildlife photography. Discover my unique perspective through the lens and explore the beauty of the world in vivid detail." />
 
-    <title>Photography Site</title>
+    <title>Photography Website</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
-          /modern-normalize.min.css" rel="stylesheet">
+            /modern-normalize.min.css" rel="stylesheet">
 
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
@@ -27,16 +28,14 @@
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="icon" href="favicon.png">
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
 
   </head>
 
@@ -78,7 +77,7 @@
 
     </nav>
 
-    <header id="header">
+    <header>
 
       <div class="container header">
 
@@ -316,55 +315,120 @@
 
     </main>
 
-    <footer id="footer">
-
+    <footer>
       <div class="container footer">
 
-        <div class="footer__text">
-          <p class="footer__text-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-            laboriosam, mollitia maxime quos repellendus dolor. Maiores fuga eum, odit quia rerum reprehenderit error.
-          </p>
-          <ul class="footer__text-socials">
-            <li><a href="#" target="_blank"><i class="ri-facebook-circle-fill"></i></a></li>
-            <li><a href="#" target="_blank"><i class="ri-youtube-fill"></i></a></li>
-            <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-            <li><a href="#" target="_blank"><i class="ri-instagram-fill"></i></a></li>
-          </ul>
-        </div>
+        <div class="footer__wrapper">
 
-        <div class="footer__about">
-          <h2 class="footer__about-title">About</h2>
-          <ul class="footer__about-links">
-            <li><a href="#" target="_blank">Service</a></li>
-            <li><a href="#" target="_blank">Album</a></li>
-            <li><a href="#" target="_blank">Stories</a></li>
-        </div>
-
-        <div class="footer__contact">
-          <h2 class="footer__contact-title">Contact</h2>
-          <ul class="footer__contact-links">
-            <li><a href="#" target="_blank">123-456-7890</a></li>
-            <li><a href="#" target="_blank">lens@email.com</a></li>
-            <li><a href="#" target="_blank">Ash Dr. San Jose,<br> South Dakota 83475</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__instagram">
-          <h2 class="footer__instagram-title">Instagram</h2>
-          <div class="footer__instagram-images">
-            <img src="./images/photo-v2 (3).jpg" alt="woman in cave">
-            <img src="./images/photo-v2 (4).jpg" alt="stairs">
-            <img src="./images/photo-v2 (5).jpg" alt="man walking in street">
-            <img src="./images/photo-v2 (6).jpg" alt="motorbike">
-            <img src="./images/photo-v2 (7).jpg" alt="bike with man">
-            <img src="./images/photo-v2 (8).jpg" alt="building">
+          <div class="footer__company">
+            <a class="footer__logo" href="#">Logo</a>
+            <p>Capturing unforgettable moments through stunning photography. Specializing in landscapes, portraits, and
+              wildlife to tell stories that last a lifetime.</p>
+            <p>Call us at <span>123-456-7890</span></p>
           </div>
+
+          <div class="footer__contact">
+            <h3 class="footer__subheader">Contact Us</h3>
+            <ul>
+              <li><a href="mailto:info@photographybusiness.com">info@photographybusiness.com</a></li>
+              <li><a href="tel:1234567890">123-456-7890</a></li>
+              <li><a href="https://www.google.com/maps/search/123+Main+St,+City,+State+12345">123 Main St, City, State
+                  12345</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__about">
+            <h3 class="footer__subheader">About Me</h3>
+            <ul>
+              <li><a href="#">My Story</a></li>
+              <li><a href="#">Photography Blog</a></li>
+              <li><a href="#">Contact Me</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__services">
+            <h3 class="footer__subheader">Services</h3>
+            <ul>
+              <li><a href="#">Portrait Photography</a></li>
+              <li><a href="#">Event Photography</a></li>
+              <li><a href="#">Landscape Prints</a></li>
+            </ul>
+          </div>
+
         </div>
+
+      </div>
+
+      <div class="footer__wrapper-2">
+        <p>© 2024 Photography Business. All rights reserved.</p>
       </div>
 
     </footer>
 
-    <script src="script.js"></script>
+
+    <script>
+
+      window.addEventListener('scroll',
+        function () {
+          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+        });
+
+      const nav = document.querySelector('.nav__list');
+      const openNavButton = document.querySelector('#nav__toggle-open');
+      const closeNavButton = document.querySelector('#nav__toggle-close');
+
+      const openNav = function () {
+        if (nav.style.display === 'none') {
+          nav.style.display = 'flex';
+          openNavButton.style.display = 'none';
+          closeNavButton.style.display = 'inline-block';
+        }
+
+        else {
+          nav.style.display = 'none';
+          openNavButton.style.display = 'inline-block';
+          closeNavButton.style.display = 'none';
+        }
+      };
+
+      openNavButton.addEventListener('click', openNav);
+
+      const closeNav = function () {
+
+        nav.style.display = 'none';
+
+        openNavButton.style.display = 'inline-block';
+
+        closeNavButton.style.display = 'none';
+      };
+
+      closeNavButton.addEventListener('click', closeNav);
+
+      if (document.body.clientWidth < 1000) {
+        nav.querySelectorAll('li a').forEach(navLink => {
+          navLink.addEventListener('click', closeNav);
+        });
+      }
+
+      const accordionHeader = document.querySelectorAll(".accordion__header");
+
+      accordionHeader.forEach(accordionHeader => {
+        accordionHeader.addEventListener("click", event => {
+          accordionHeader.classList.toggle("active");
+          const accordionBody = accordionHeader.nextElementSibling;
+
+          if (accordionHeader.classList.contains("active")) {
+            accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+          }
+
+          else {
+            accordionBody.style.maxHeight = 0;
+          }
+
+        });
+      });
+
+    </script>
 
   </body>
 

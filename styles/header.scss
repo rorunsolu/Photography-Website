@@ -1,54 +1,40 @@
-@import "./style.scss";
-@import "./variables.scss";
-
 header {
-    /*layout*/
     display: grid;
 }
 
 .header {
-    /*layout*/
     display: flex;
     align-items: center;
 
-    /*positioning*/
     position: relative;
 
     &__text {
-        /*layout*/
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1rem;
 
-        /*dimensions*/
         width: 80%;
 
-        /*positioning*/
         position: absolute;
         top: 50%;
         left: 50%;
         z-index: 1;
 
-        /*other*/
         transform: translate(-50%, -50%);
 
         @media (width < 700px) {
-            /*positioning*/
             top: 50%;
 
-            /*dimensions*/
             width: 90%;
         }
     }
 
     &__title {
-        /*font*/
         font-size: 3.5rem;
         font-weight: 600;
 
-        /*color*/
         color: hsl(0, 0%, 100%);
 
         @media (width < 1300px) {
@@ -69,11 +55,9 @@ header {
     }
 
     &__paragraph {
-        /*font*/
         font-size: 1rem;
         font-weight: 500;
 
-        /*color*/
         color: hsl(0, 0%, 80%);
 
         @media (width < 450px) {
