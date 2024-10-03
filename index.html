@@ -42,39 +42,21 @@
   <body>
 
     <nav>
-
-      <div class="container nav">
-
-        <a class="nav__logo" href="#">Logo</a>
+      <div class="container-nav nav">
 
         <ul class="nav__list">
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#services">Services</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#projects">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#blogs">Blogs</a>
-          </li>
-
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#blogs">Blogs</a></li>
+          <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
         </ul>
 
-        <div class="nav__buttons-wrapper">
-          <a class="button button-grey" href="#" target="_blank">Contact Us</a>
-        </div>
-
-        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
-        </button>
-        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
+        <button class="nav__toggle-open" id="openNavPopup-btn" type="button" onclick="openPopupNav()"><i
+             class="ri-menu-line"></i>
         </button>
 
       </div>
-
     </nav>
 
     <header>
@@ -84,28 +66,28 @@
         <div class="header__text">
 
           <h1 class="header__title">We are here to capture your beautiful moments</h1>
-          <p class="header__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatibus ad,
-            blanditiis nihil iste quasi minus incidunt atque consectetur minima officiis est, eligendi nesciunt labore
-            temporibus ratione sit laboriosam veritatis!</p>
+          <p class="header__paragraph">From intimate portraits to breathtaking landscapes, we strive to capture the
+            essence of
+            every moment. Let us transform your memories into timeless art, filled with emotion and beauty.</p>
 
           <div class="header__buttons-wrapper">
-            <a class="button button-grey" href="#" target="_blank">Get Started</a>
-            <a class="button button-white" href="#" target="_blank">View More</a>
+            <a class="button" href="#" target="_blank">Get Started</a>
+            <a class="button" href="#" target="_blank">View More</a>
           </div>
 
         </div>
 
         <div class="header__image-grid">
-          <img class="header__image" src="./images/photo-v2.jpg" alt="man in a bush">
-          <img class="header__image" src="./images/photo-v2 (2).jpg" alt="white car">
-          <img class="header__image" src="./images/photo-v2 (3).jpg" alt="woman in cave">
-          <img class="header__image" src="./images/photo-v2 (4).jpg" alt="staircase">
-          <img class="header__image" src="./images/photo-v2 (5).jpg" alt="man walking in street">
-          <img class="header__image" src="./images/photo-v2 (6).jpg" alt="motorbike">
-          <img class="header__image" src="./images/photo-v2 (7).jpg" alt="motorbike with man">
-          <img class="header__image" src="./images/photo-v2 (8).jpg" alt="building on street">
-          <img class="header__image" src="./images/photo-v2 (9).jpg" alt="multicolored building">
-          <img class="header__image" src="./images/photo-v2 (10).jpg" alt="metro stairway">
+          <img class="header__image" src="./images/header-img-1.jpg" alt="man in a bush" loading="lazy">
+          <img class="header__image" src="./images/header-img-2.jpg" alt="white car" loading="lazy">
+          <img class="header__image" src="./images/header-img-3.jpg" alt="woman in cave" loading="lazy">
+          <img class="header__image" src="./images/header-img-4.jpg" alt="staircase" loading="lazy">
+          <img class="header__image" src="./images/header-img-5.jpg" alt="man walking in street" loading="lazy">
+          <img class="header__image" src="./images/header-img-6.jpg" alt="motorbike" loading="lazy">
+          <img class="header__image" src="./images/header-img-7.jpg" alt="motorbike with man" loading="lazy">
+          <img class="header__image" src="./images/header-img-8.jpg" alt="building on street" loading="lazy">
+          <img class="header__image" src="./images/header-img-9.jpg" alt="multicolored building" loading="lazy">
+          <img class="header__image" src="./images/header-img-10.jpg" alt="metro stairway" loading="lazy">
         </div>
 
       </div>
@@ -118,59 +100,68 @@
 
         <div class="container services">
 
-          <div class="services__text">
-            <h2 class="services__title">Here are our services</h2>
-            <p class="services__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatibus ad
-              blanditiis nihil iste quasi minus incidunt atque consectetur minima officiis est, eligendi nesciunt labore
-              temporibus ratione sit laboriosam veritatis.
-            </p>
-          </div>
+          <h2 class="services__title">Our Photography Services</h2>
+          <p class="services__paragraph">We offer a range of professional photography services to capture your special
+            moments
+            with creativity and precision.</p>
 
           <div class="services__cards">
+
             <article class="services__card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
               <h3 class="services__card-title">Photography</h3>
-              <p class="services__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                voluptatibus ad
-                blanditiis nihil iste
-                quasi minus incidunt atque consectetur minima officiis est, eligendi nesciunt labore.</p>
+              <p class="services__card-paragraph">Professional photo sessions tailored to your needs, from portraits to
+                events,
+                capturing every moment beautifully.</p>
             </article>
 
             <article class="services__card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
               <h3 class="services__card-title">Videography</h3>
-              <p class="services__card-paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+              <p class="services__card-paragraph">Capture your special moments in motion with high-quality videography
+                for events
+                and personal projects.</p>
             </article>
 
             <article class="services__card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
               <h3 class="services__card-title">Editing</h3>
-              <p class="services__card-paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <p class="services__card-paragraph">Expert photo and video editing to enhance your visuals and bring out
+                the best in
+                every shot.</p>
             </article>
 
             <article class="services__card">
-              <h3 class="services__card-title">Marketing</h3>
-              <p class="services__card-paragraph">Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <h3 class="services__card-title">Ceremonies</h3>
+              <p class="services__card-paragraph">Capture the magic of weddings, ceremonies, and other special events
+                with
+                professional photography services.</p>
             </article>
 
-            <article class="services__card">
-              <h3 class="services__card-title">Events</h3>
-              <p class="services__card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-
-            <article class="services__card">
-              <h3 class="services__card-title">Wedding</h3>
-              <p class="services__card-paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</p>
-            </article>
           </div>
 
-          <div class="services__buttons-wrapper">
-            <a class="button button-grey" href="#" target="_blank">Contact Us</a>
-            <a class="button button-white" href="#" target="_blank">Browse All Services</a>
-          </div>
+          <a class="button" href="#" target="_blank">Browse All Services</a>
 
         </div>
 
@@ -180,117 +171,44 @@
 
         <div class="container projects">
 
-          <div class="projects__text">
-            <h2 class="projects__title">Our latest projects</h2>
-            <p class="projects__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              voluptatibus
-              ad
-              blanditiis nihil iste
-              quasi minus incidunt atque consectetur minima officiis est sit amet consectetur adipisicing elit. Nisi
-              veritatis
-              laborum cum et eligendi quidem perspiciatis fugit iure, illo accusantium dolor ratione quam iste officia
-              ea unde,
-              ut, aspernatur quo?</p>
-          </div>
+          <h2 class="projects__title">Our Latest Projects</h2>
+          <p class="projects__subtitle">Discover my recent work, featuring stunning landscapes, intimate portraits, and
+            captivating wildlife photography.</p>
 
           <div class="projects__cards">
 
             <div class="projects__card">
+              <img class="projects__card-image" src="./images/photo-v2 (11).jpg" alt="woman in dress">
               <div class="projects__card-text">
-                <h2 class="projects__card-title">Company Grand Opening Ceremony</h2>
-                <p class="projects__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  voluptatibus ad blanditiis nihil iste quasi minus incidunt atque consectetur minima officiis est,
-                  eligendi nesciunt labore.</p>
-                <a class="button button-grey" href="#" target="_blank">Browse Album</a>
-              </div>
-              <div class="projects__card-image">
-                <img src="./images/photo-v2 (11).jpg" alt="woman in dress">
-              </div>
-            </div>
-
-            <div class="projects__card">
-              <div class="projects__card-image">
-                <img src="./images/photo-v2 (12).jpg" alt="car">
-              </div>
-              <div class="projects__card-text">
-                <h2 class="projects__card-title">Company Grand Opening Ceremony</h2>
-                <p class="projects__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  voluptatibus ad blanditiis nihil iste quasi minus incidunt atque consectetur minima officiis est,
-                  eligendi nesciunt labore.</p>
+                <h2 class="projects__card-title">Grand Opening Celebration</h2>
+                <p class="projects__card-paragraph">Captured the excitement and energy of a company's grand opening
+                  event,
+                  highlighting special moments and candid expressions.</p>
                 <a class="button button-grey" href="#" target="_blank">Browse Album</a>
               </div>
             </div>
 
             <div class="projects__card">
+              <img class="projects__card-image" src="./images/photo-v2 (12).jpg" alt="car">
               <div class="projects__card-text">
-                <h2 class="projects__card-title">Company Grand Opening Ceremony</h2>
-                <p class="projects__card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                  voluptatibus ad blanditiis nihil iste quasi minus incidunt atque consectetur minima officiis est,
-                  eligendi nesciunt labore.</p>
-                <a class="button button-grey" href="#" target="_blank">Browse Album</a>
-              </div>
-              <div class="projects__card-image">
-                <img src="./images/photo-v2 (13).jpg" alt="beach">
+                <h2 class="projects__card-title">Luxury Car Showcase</h2>
+                <p class="projects__card-paragraph">Documented the elegance of a luxury car event, focusing on detailed
+                  shots
+                  and the overall ambiance of the showcase.</p>
+                <a class="button" href="#" target="_blank">Browse Album</a>
               </div>
             </div>
 
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="blogs">
-
-        <div class="container blogs">
-
-          <div class="blogs__text">
-            <h2 class="blogs__title">Read our latest blogs & articles</h2>
-          </div>
-
-          <div class="blogs__cards">
-
-            <article class="blogs__card">
-
-              <div class="blogs__card-image">
-                <img src="./images/photo-v2 (14).jpg" alt="Camera">
+            <div class="projects__card">
+              <img class="projects__card-image" src="./images/photo-v2 (13).jpg" alt="beach">
+              <div class="projects__card-text">
+                <h2 class="projects__card-title">Sunset Beach Photoshoot</h2>
+                <p class="projects__card-paragraph">A serene photoshoot capturing the beauty of a sunset by the beach,
+                  with
+                  vibrant colors and tranquil settings.</p>
+                <a class="button button-grey" href="#" target="_blank">Browse Album</a>
               </div>
-
-              <div class="blogs__card-text">
-                <p class="blogs__card-date">March 23, 2022</p>
-                <h2 class="blogs__card-title">Cannon Lens Rumors, Tycho Crater Up Close</h2>
-                <a class="button button-grey" href="#" target="_blank">Read More</a>
-              </div>
-
-
-
-            </article>
-
-            <article class="blogs__card">
-
-              <div class="blogs__card-image">
-                <img src="./images/photo-v2 (15).jpg" alt="camera">
-              </div>
-
-              <div class="blogs__card-text">
-                <p class="blogs__card-date">March 20, 2022</p>
-                <h2 class="blogs__card-title">Panasonic Leica Summilux DG 12mm f/1.4 ASPH Review</h2>
-                <a class="button button-grey" href="#" target="_blank">Read More</a>
-              </div>
-
-            </article>
-
-            <article class="blogs__card">
-
-              <div class="blogs__card-image">
-                <img src="./images/photo-v2 (16).jpg" alt="camera">
-              </div>
-
-              <div class="blogs__card-text">
-                <p class="blogs__card-date">March 15, 2022</p>
-                <h2 class="blogs__card-title">New & Rumored Sony Lenses, MacBook Sales</h2>
-                <a class="button button-grey" href="#" target="_blank">Read More</a>
-              </div>
+            </div>
 
           </div>
 
@@ -302,16 +220,109 @@
 
         <div class="container contact">
 
-          <div class="contact__text">
-            <h2 class="contact__title">Need help with professional photography? Let's work together!</h2>
-            <p class="contact__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate
-              quidem! Sint, quae.</p>
-            <a class="button button-grey" href="#" target="_blank">Get in Touch</a>
+          <h2 class="contact__title">Need help with professional photography? Let's work together!</h2>
+          <p class="contact__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, voluptate
+            quidem! Sint, quae.</p>
+          <a href="mailto:email@gmail.com" class="button"
+             aria-label="Send an email to email@gmail.com" title="Send an email to email@gmail.com">Get in
+            Touch</a>
+
+        </div>
+
+      </section>
+
+      <section id="blogs">
+
+        <div class="container blogs">
+
+          <h2 class="blogs__title">Read our latest blogs & articles</h2>
+
+          <div class="blogs__cards">
+
+            <article class="blogs__card">
+
+              <img class="blogs__card-image" src="./images/photo-v2 (14).jpg" alt="Camera">
+
+              <div class="blogs__card-text">
+                <p class="blogs__card-date">March 23, 2022</p>
+                <h3 class="blogs__card-title">Cannon Lens Rumors, Tycho Crater Up Close</h3>
+                <a class="button button-grey" href="#" target="_blank">Read More</a>
+              </div>
+
+            </article>
+
+            <article class="blogs__card">
+
+              <img class="blogs__card-image" src="./images/photo-v2 (15).jpg" alt="camera">
+
+              <div class="blogs__card-text">
+                <p class="blogs__card-date">March 20, 2022</p>
+                <h3 class="blogs__card-title">Panasonic Leica Summilux DG 12mm f/1.4 ASPH Review</h3>
+                <a class="button button-grey" href="#" target="_blank">Read More</a>
+              </div>
+
+            </article>
+
+            <article class="blogs__card">
+
+              <img class="blogs__card-image" src="./images/photo-v2 (16).jpg" alt="camera">
+
+              <div class="blogs__card-text">
+                <p class="blogs__card-date">March 15, 2022</p>
+                <h3 class="blogs__card-title">New & Rumored Sony Lenses, MacBook Sales</h3>
+                <a class="button" href="#" target="_blank">Read More</a>
+              </div>
+
           </div>
 
         </div>
 
       </section>
+
+      <section id="faq">
+
+        <div class="container faq">
+
+          <h2 class="faq__title">Frequently Asked Questions</h2>
+
+          <div class="accordion">
+
+            <div class="accordion__item">
+              <div class="accordion__header">Which Photography Package is Best for Me?</div>
+              <div class="accordion__body">
+                <div class="accordion__content">Our packages are designed to suit different needs—from individual
+                  portraits to
+                  large events. If you're unsure which package suits you best, feel free to contact us, and we'll help
+                  you
+                  choose based on your requirements.</div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__header">Do You Offer Subscription Services?</div>
+              <div class="accordion__body">
+                <div class="accordion__content">Yes, we offer subscription services for clients who require ongoing
+                  photography sessions, such as businesses needing regular content or families wanting seasonal photo
+                  shoots.
+                  Contact us for more details on our subscription plans.</div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <div class="accordion__header">Can I Access My Photos on All My Devices?</div>
+              <div class="accordion__body">
+                <div class="accordion__content">Absolutely! We provide you with a secure online gallery where you can
+                  access,
+                  download, and share your photos on any device, whether it’s a phone, tablet, or computer.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
     </main>
 
@@ -365,50 +376,54 @@
 
     </footer>
 
-
     <script>
 
-      window.addEventListener('scroll',
-        function () {
-          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
-        });
+      function openPopupNav() {
+        const popupNavContainer = document.createElement('div');
 
-      const nav = document.querySelector('.nav__list');
-      const openNavButton = document.querySelector('#nav__toggle-open');
-      const closeNavButton = document.querySelector('#nav__toggle-close');
+        popupNavContainer.innerHTML = `
 
-      const openNav = function () {
-        if (nav.style.display === 'none') {
-          nav.style.display = 'flex';
-          openNavButton.style.display = 'none';
-          closeNavButton.style.display = 'inline-block';
-        }
+        <div id="navPopup">
 
-        else {
-          nav.style.display = 'none';
-          openNavButton.style.display = 'inline-block';
-          closeNavButton.style.display = 'none';
-        }
+            <button class="nav__toggle-close" id="closeNavPopup-btn" type="button" onclick="closePopupNav()"><i class="ri-close-line"></i>
+            </button>
+
+            <div id="navPopUpLinks">
+              <a href="#home" onclick="closePopupNav()">Home</a>
+              <a href="#about" onclick="closePopupNav()">About</a>
+              <a href="#contact" onclick="closePopupNav()">Contact</a>
+              <a href="#projects" onclick="closePopupNav()">Projects</a>
+            </div>
+
+            <div class="icon-wrapper">
+              <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
+                 aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
+                   class="ri-github-fill"></i></a>
+              <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
+                 aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
+                   class="ri-linkedin-box-fill"></i></a>
+            </div>
+
+        </div>
+
+        `;
+
+        document.body.style.overflow = 'hidden';
+
+        document.body.appendChild(popupNavContainer);
       };
 
-      openNavButton.addEventListener('click', openNav);
+      function closePopupNav() {
+        const navPopup = document.getElementById('navPopup');
+        const navPopupLinks = document.querySelectorAll('#navPopUpLinks div');
+        const navPopUpLink = document;
 
-      const closeNav = function () {
+        if (navPopup) {
+          navPopup.remove();
 
-        nav.style.display = 'none';
-
-        openNavButton.style.display = 'inline-block';
-
-        closeNavButton.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
       };
-
-      closeNavButton.addEventListener('click', closeNav);
-
-      if (document.body.clientWidth < 1000) {
-        nav.querySelectorAll('li a').forEach(navLink => {
-          navLink.addEventListener('click', closeNav);
-        });
-      }
 
       const accordionHeader = document.querySelectorAll(".accordion__header");
 

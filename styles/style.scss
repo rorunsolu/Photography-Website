@@ -1,7 +1,9 @@
 :root {
     --color-white: #fff;
-    --color-grey: #71717a;
+    //--color-grey: #71717a;
+    --color-grey: #8a8f98;
     --color-black: #000;
+    --color-blue: hsl(209, 100%, 50%);
 
     --bg-color: rgba(193, 194, 194, 0.11);
 
@@ -12,6 +14,7 @@
     --border-glass: 1px solid rgba(255, 255, 255, 0.125);
     --border-radius: 0.625rem;
     --padding: 1rem;
+    --padding-medium: 2rem;
     --gap-card-wrapper: 1.5rem;
     --gap-card-wrapper-medium: 3rem;
     --gap-card-wrapper-large: 4.5rem;
@@ -76,48 +79,4 @@ img {
     object-position: center;
 
     width: 100%;
-}
-
-.button {
-    display: inline-block;
-    border-radius: 1.5rem;
-    padding: 0.5rem 1.5rem;
-
-    @media (width < 450px) {
-        font-size: 0.8rem;
-    }
-}
-
-.button-grey {
-    /*color*/
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 100%);
-
-    &:hover {
-        background-color: hsl(0, 0%, 100%);
-        color: hsl(0, 0%, 0%);
-
-        transition: var(--transition);
-    }
-}
-
-.button-white {
-    /*color*/
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 0%);
-
-    &:hover {
-        background-color: hsl(0, 0%, 10%);
-        color: hsl(0, 0%, 100%);
-
-        transition: var(--transition);
-    }
-}
-
-.window-scrolled {
-    /*Box Model*/
-    border-bottom: 0.1rem solid hsl(0, 0%, 100%);
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-
-    box-sizing: content-box;
 }

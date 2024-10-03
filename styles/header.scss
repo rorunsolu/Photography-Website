@@ -1,10 +1,8 @@
-header {
-    display: grid;
-}
-
 .header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 
     position: relative;
 
@@ -13,7 +11,6 @@ header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
 
         width: 80%;
 
@@ -32,26 +29,23 @@ header {
     }
 
     &__title {
-        font-size: 3.5rem;
-        font-weight: 600;
+        // font-size: 3.5rem;
 
-        color: hsl(0, 0%, 100%);
+        // @media (width < 1300px) {
+        //     font-size: 3rem;
+        // }
 
-        @media (width < 1300px) {
-            font-size: 3rem;
-        }
+        // @media (width < 1000px) {
+        //     font-size: 2.5rem;
+        // }
 
-        @media (width < 1000px) {
-            font-size: 2.5rem;
-        }
+        // @media (width < 450px) {
+        //     font-size: 2rem;
+        // }
 
-        @media (width < 450px) {
-            font-size: 2rem;
-        }
-
-        @media (width < 360px) {
-            font-size: 1.5rem;
-        }
+        // @media (width < 360px) {
+        //     font-size: 1.5rem;
+        // }
     }
 
     &__paragraph {
@@ -77,8 +71,9 @@ header {
         grid-template-rows: repeat(2, 1fr);
         gap: 1.75rem;
 
-        filter: brightness(0.6);
         z-index: -1;
+
+        filter: brightness(0.86);
 
         @media (width < 700px) {
             grid-template-columns: repeat(3, 1fr);
