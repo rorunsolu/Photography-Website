@@ -51,9 +51,9 @@
     backdrop-filter: var(--bg-blur);
     background-color: var(--bg-frosted-white);
 
-    &:hover {
-        transition: var(--transition);
+    transition: var(--transition);
 
+    &:hover {
         background-color: var(--bg-frosted-white-secondary);
     }
 

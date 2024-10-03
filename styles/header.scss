@@ -1,10 +1,15 @@
 .header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
     position: relative;
+
+    min-height: 100vh;
+
+    padding: 7.5rem 0;
+
+    @media (width < 600px) {
+        padding: 3.5rem 0;
+    }
 
     &__text {
         display: flex;
@@ -12,7 +17,7 @@
         align-items: center;
         text-align: center;
 
-        width: 80%;
+        width: 100%;
 
         position: absolute;
         top: 50%;

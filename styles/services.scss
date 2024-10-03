@@ -19,13 +19,20 @@
         flex-direction: column;
         align-items: center;
 
+        border: var(--border-glass);
         border-radius: var(--border-radius);
         padding: var(--padding-medium);
 
         background-color: var(--bg-frosted-white);
 
+        transition: var(--transition);
+
         @media (width < 800px) {
             padding: var(--padding);
+        }
+
+        &:hover {
+            background-color: var(--bg-frosted-white-secondary);
         }
     }
 

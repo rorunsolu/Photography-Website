@@ -6,7 +6,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 50;
 
     height: 5rem;
     width: 100vw;
@@ -35,7 +35,9 @@ nav {
 
     padding: 1rem 0;
 
-    background-color: var(--color-black);
+    background-color: var(--bg-frosted-white);
+
+    backdrop-filter: var(--bg-blur);
 
     @media (width < 1000px) {
         justify-content: flex-end;
@@ -116,6 +118,8 @@ nav {
 
     background-color: var(--color-white);
 
+    transition: var(--transition);
+
     a {
         font-size: 1.5rem;
 
@@ -125,8 +129,6 @@ nav {
             color: var(--color-blue);
 
             cursor: pointer;
-
-            transition: var(--transition);
         }
     }
 }
@@ -163,9 +165,9 @@ nav {
 
     color: var(--color-blue);
 
+    transition: var(--transition);
+
     &:hover {
         color: var(--color-black);
-
-        transition: var(--transition);
     }
 }
