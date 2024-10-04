@@ -11,10 +11,19 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap-card-wrapper-medium);
+
+        @media (width < 1350px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (width < 1000px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__card {
         display: grid;
+        text-align: center;
 
         border: var(--border-glass);
         border-radius: var(--border-radius);
@@ -26,6 +35,14 @@
         overflow: hidden;
 
         position: relative;
+
+        @media (width < 1350px) {
+            min-height: 500px;
+        }
+
+        @media (width < 1000px) {
+            min-height: 400px;
+        }
 
         &::before {
             content: "";
@@ -59,6 +76,22 @@
 
         &:hover > .projects__card-text {
             margin-top: 60%;
+
+            @media (width < 1650px) {
+                margin-top: 90%;
+            }
+
+            @media (width < 1350px) {
+                margin-top: 50%;
+            }
+
+            @media (width < 1000px) {
+                margin-top: 20%;
+            }
+
+            @media (width < 600px) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -69,6 +102,7 @@
     &__card-text {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
 
         border-radius: var(--border-radius);
@@ -79,5 +113,12 @@
         backdrop-filter: var(--bg-blur);
 
         transition: var(--transition);
+    }
+
+    &__card-paragraph {
+        max-height: 54px;
+        min-height: 54px;
+
+        overflow: hidden;
     }
 }

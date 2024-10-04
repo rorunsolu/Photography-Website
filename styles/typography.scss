@@ -19,8 +19,12 @@ h2 {
     font-weight: 700;
     font-size: 2.75rem;
 
+    @media (width <= 660px) {
+        font-size: 2.15rem;
+    }
+
     @media (width <= 300px) {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 }
 
@@ -31,7 +35,7 @@ h3 {
     line-height: 1.5;
 
     @media (width <= 500px) {
-        font-size: 1.25rem;
+        font-size: 1.55rem;
     }
 }
 
@@ -48,10 +52,6 @@ p {
     color: var(--color-grey);
 
     transition: var(--transition);
-
-    @media (width <= 400px) {
-        font-size: 0.9rem;
-    }
 }
 
 a {
