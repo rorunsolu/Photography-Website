@@ -8,19 +8,10 @@ nav {
     right: 0;
     z-index: 50;
 
-    height: 5rem;
     width: 100vw;
 
-    padding-top: 1rem;
-
-    @media (width < 1000px) {
-        //position: relative;
-    }
-
     @media (width < 600px) {
-        height: 3.5rem;
-
-        padding-top: 0.75rem;
+        height: 3rem;
     }
 }
 
@@ -33,71 +24,46 @@ nav {
 
     width: 100%;
 
-    border: var(--border-glass);
-    padding: 1rem 0;
+    padding: 1.25rem 0;
 
-    background-color: var(--bg-frosted-white);
-
-    backdrop-filter: var(--bg-blur);
+    background-color: var(--color-black);
 
     @media (width < 1000px) {
         justify-content: flex-end;
 
+        border-radius: 0;
         padding: 1rem 2rem;
+    }
+
+    @media (width < 600px) {
+        padding: 0.5rem 1rem;
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
 
-        position: relative;
-
         @media (width < 1000px) {
             display: none;
-            flex-direction: column;
-            gap: 0;
-
-            position: absolute;
-            top: 100%;
-            right: 0;
-
-            background-color: var(--color-black);
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.33);
-            border-radius: 0.5rem;
-        }
-    }
-
-    &__item {
-        border-radius: 0.5rem;
-        padding: 0.5rem 1rem;
-
-        @media (width < 1000px) {
-            border-radius: 0;
-            padding: 0;
-
-            height: 5rem;
         }
     }
 
     &__link {
+        border: 0.0625rem solid transparent;
+        border-radius: var(--border-radius);
+        padding: 0.5rem 1rem;
+
         font-size: 1.25rem;
         font-weight: 500;
 
         color: var(--color-white);
 
-        @media (width < 1000px) {
-            display: flex;
-            align-items: center;
-
-            height: 100%;
-
-            padding: 1rem 5rem;
-        }
+        transition: var(--transition);
 
         &:hover {
-            color: var(--color-blue);
+            border: var(--border-glass);
 
-            transition: all 300ms ease;
+            background-color: var(--bg-card);
         }
     }
 }
@@ -110,6 +76,29 @@ nav {
     text-align: center;
 
     position: absolute;
+    z-index: 990;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bg-frosted-black);
+
+    -webkit-backdrop-filter: var(--bg-blur);
+    backdrop-filter: var(--bg-blur);
+
+    transition: var(--transition);
+}
+
+#popupNavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
@@ -117,27 +106,29 @@ nav {
     width: 100%;
     height: 100%;
 
-    background-color: var(--color-white);
+    background-color: var(--bg-frosted-black);
+
+    -webkit-backdrop-filter: var(--bg-blur);
+    backdrop-filter: var(--bg-blur);
 
     transition: var(--transition);
-
-    a {
-        font-size: 1.5rem;
-
-        color: var(--color-black);
-
-        &:hover {
-            color: var(--color-blue);
-
-            cursor: pointer;
-        }
-    }
 }
 
 #navPopUpLinks {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
+
+    //position: absolute;
+    //z-index: 999;
+
+    a {
+        color: var(--color-white);
+
+        &:hover {
+            color: var(--color-frosted-white);
+        }
+    }
 }
 
 .nav__toggle-open {
@@ -147,7 +138,7 @@ nav {
         display: inline-block;
 
         background: transparent;
-        color: var(--color-black);
+        color: var(--color-white);
 
         font-size: 2rem;
 
@@ -158,17 +149,19 @@ nav {
 .nav__toggle-close {
     display: inline-block;
 
+    margin-bottom: 1rem;
+
     background: transparent;
 
-    font-size: 4rem;
+    font-size: 3rem;
 
     cursor: pointer;
 
-    color: var(--color-blue);
+    color: var(--color-white);
 
     transition: var(--transition);
 
     &:hover {
-        color: var(--color-black);
+        color: var(--color-frosted-white);
     }
 }

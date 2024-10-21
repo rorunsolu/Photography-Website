@@ -3,14 +3,18 @@
     --color-grey: #8a8f98;
     --color-black: #000;
 
-    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-    --shadow-card: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+    --bg-black: #1a1a1a;
+    --bg-black: #0f0f0f;
+    --bg-card: #1d1d1d;
 
-    --border-white: 1px solid var(--bg-white);
-    --border-glass: 1px solid rgba(255, 255, 255, 0.125);
-    --border-radius: 0.625rem;
+    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+
+    --border-glass: 0.0625rem solid rgba(255, 255, 255, 0.125);
+    --border-radius: 0.425rem;
     --padding: 1rem;
     --padding-medium: 2rem;
+
+    --gap-card-wrapper-small: 1rem;
     --gap-card-wrapper: 1.5rem;
     --gap-card-wrapper-medium: 3rem;
     --gap-card-wrapper-large: 4.5rem;
@@ -22,14 +26,10 @@
     --bg-frosted-white: rgba(193, 194, 194, 0.11);
     --bg-frosted-black: rgba(13, 13, 14, 0.5);
     --bg-frosted-white-secondary: rgba(193, 194, 194, 0.3);
-    --bg-frosted-orange-secondary: rgba(255, 121, 0, 0.75);
-    --bg-gradient: linear-gradient(130deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
-    --bg-blur: blur(20px);
-    --bg-blur-secondary: blur(5px);
 
     --box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
 
-    --transition: all 0.3s ease-in-out;
+    --transition: 0.3s ease-in-out;
 }
 
 * {
@@ -59,6 +59,15 @@ body {
 
     color: var(--color-white);
     background-color: var(--color-black);
+    background-color: var(--bg-black);
+}
+
+header {
+    padding: 8.5rem 0;
+
+    @media (width < 600px) {
+        padding: 5.5rem 0;
+    }
 }
 
 section {
@@ -70,9 +79,15 @@ section {
 }
 
 img {
-    display: inline-block;
+    display: block;
     object-fit: cover;
     object-position: center;
 
     width: 100%;
+    height: auto;
+}
+
+svg {
+    width: 1.25rem;
+    height: 1.25rem;
 }

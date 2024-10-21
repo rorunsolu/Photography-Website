@@ -28,6 +28,8 @@
         color: var(--color-white);
 
         @media (width < 500px) {
+            text-align: center;
+
             padding: 2.75rem 1.25rem;
         }
 
@@ -42,7 +44,7 @@
             color: var(--color-white);
 
             @media (width < 500px) {
-                right: 50%;
+                right: 45%;
                 bottom: 15px
             }
         }

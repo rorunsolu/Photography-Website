@@ -1,9 +1,4 @@
 .blogs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
     &__title {
         margin-bottom: 4rem;
     }
@@ -12,47 +7,34 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap-card-wrapper);
-
-        @media (width < 1100px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media (width < 700px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
+        overflow: hidden;
 
         border: var(--border-glass);
         border-radius: var(--border-radius);
-        padding: var(--padding);
 
-        background-color: var(--bg-frosted-white);
-    }
+        background-color: var(--bg-card);
 
-    &__card-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+        cursor: pointer;
 
-    &__card-title {
-        max-height: 84px;
-        min-height: 84px;
+        &:hover {
+            transform: translateY(-0.25rem);
 
-        overflow: hidden;
-
-        @media (width < 500px) {
-            max-height: 60px;
-            min-height: 60px;
+            box-shadow: var(--box-shadow);
         }
     }
 
+    &__card-text {
+        padding: var(--padding);
+    }
+
+    &__card-title {
+        color: var(--color-white);
+    }
+
     &__card-image {
-        border-radius: var(--border-radius);
-        margin-bottom: 0.5rem;
+        //border-radius: var(--border-radius);
     }
 }

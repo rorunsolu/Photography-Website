@@ -61,26 +61,24 @@
 
     <header>
 
-      <div class="container header">
+      <div class="container container-header">
 
         <div class="header__text">
 
           <h1 class="header__title">Capture your beautiful moments</h1>
           <p class="header__paragraph">From intimate portraits to breathtaking landscapes, we strive to capture the
             essence of
-            every moment. Let us transform your memories into timeless art, filled with emotion and beauty.</p>
+            every moment.
+          </p>
 
-          <div class="header__buttons-wrapper">
-            <a class="button" href="#" target="_blank">Get Started</a>
-            <a class="button" href="#" target="_blank">View More</a>
-          </div>
+          <a class="button" href="#" target="_blank">Book a Shoot</a>
 
         </div>
 
         <div class="header__image-grid">
-          <img class="header__image" src="./images/header-img-1.jpg" alt="man in a bush" loading="lazy">
+          <img class="header__image" src="./images/header-img-3.jpg" alt="man in a bush" loading="lazy">
           <img class="header__image" src="./images/header-img-2.jpg" alt="white car" loading="lazy">
-          <img class="header__image" src="./images/header-img-3.jpg" alt="woman in cave" loading="lazy">
+          <img class="header__image" src="./images/header-img-1.jpg" alt="woman in cave" loading="lazy">
           <img class="header__image" src="./images/header-img-4.jpg" alt="staircase" loading="lazy">
           <img class="header__image" src="./images/header-img-5.jpg" alt="man walking in street" loading="lazy">
           <img class="header__image" src="./images/header-img-6.jpg" alt="motorbike" loading="lazy">
@@ -177,39 +175,47 @@
 
           <div class="projects__cards">
 
-            <div class="projects__card">
+            <a class="projects__card">
+              <img class="projects__card-image" src="./images/project-img-1.jpg" alt="picture of a tram">
               <div class="projects__card-text">
-                <h3 class="projects__card-title">Grand Opening Celebration</h3>
+                <h3 class="projects__card-title">Grand Opening</h3>
                 <p class="projects__card-paragraph">Captured the excitement and energy of a company's grand opening
-                  event,
-                  highlighting special moments and candid expressions.</p>
-                <a class="button button-grey" href="#" target="_blank">Browse Album</a>
+                  event.</p>
               </div>
-            </div>
+            </a>
 
-            <div class="projects__card">
+            <a class="projects__card">
+              <img class="projects__card-image" src="./images/project-img-2.jpg" alt="picture of a card">
               <div class="projects__card-text">
-                <h3 class="projects__card-title">Luxury Car Showcase</h3>
+                <h3 class="projects__card-title">Car Showcase</h3>
                 <p class="projects__card-paragraph">Documented the elegance of a luxury car event, focusing on detailed
-                  shots
-                  and the</p>
-                <a class="button" href="#" target="_blank">Browse Album</a>
+                  shots.</p>
               </div>
-            </div>
+            </a>
 
-            <div class="projects__card">
+            <a class="projects__card">
+              <img class="projects__card-image" src="./images/project-img-3.jpg" alt="picture of a beach sunset">
               <div class="projects__card-text">
-                <h3 class="projects__card-title">Sunset Beach Photoshoot</h3>
-                <p class="projects__card-paragraph">A serene photoshoot capturing the beauty of a sunset by the beach,
+                <h3 class="projects__card-title">Sunset Photoshoot</h3>
+                <p class="projects__card-paragraph">A serene photoshoot capturing the beauty of a sunset by the beach
                   with
-                  vibrant colors and tranquil settings.</p>
-                <a class="button button-grey" href="#" target="_blank">Browse Album</a>
+                  vibrant colors.</p>
               </div>
-            </div>
+            </a>
+
+            <a class="projects__card">
+              <img class="projects__card-image" src="./images/project-img-4.jpg" alt="picture of a mountain landscape">
+              <div class="projects__card-text">
+                <h3 class="projects__card-title">Mountain Photoshoot</h3>
+                <p class="projects__card-paragraph">An exhilarating photoshoot capturing the rugged beauty of
+                  mountainous
+                  terrain.</p>
+              </div>
+            </a>
+
+            </article>
 
           </div>
-
-        </div>
 
       </section>
 
@@ -236,39 +242,38 @@
 
           <div class="blogs__cards">
 
-            <article class="blogs__card">
+            <a class="blogs__card">
 
               <img class="blogs__card-image" src="./images/photo-v2 (14).jpg" alt="Camera">
 
               <div class="blogs__card-text">
                 <p class="blogs__card-date">March 23, 2022</p>
                 <h3 class="blogs__card-title">Cannon Lens Rumors, Tycho Crater Up Close</h3>
-                <a class="button button-grey" href="#" target="_blank">Read More</a>
               </div>
 
-            </article>
+            </a>
 
-            <article class="blogs__card">
+            <a class="blogs__card">
 
               <img class="blogs__card-image" src="./images/photo-v2 (15).jpg" alt="camera">
 
               <div class="blogs__card-text">
                 <p class="blogs__card-date">March 20, 2022</p>
                 <h3 class="blogs__card-title">Panasonic DG 12mm f/1.4 ASPH Review</h3>
-                <a class="button button-grey" href="#" target="_blank">Read More</a>
               </div>
 
-            </article>
+            </a>
 
-            <article class="blogs__card">
+            <a class="blogs__card">
 
               <img class="blogs__card-image" src="./images/photo-v2 (16).jpg" alt="camera">
 
               <div class="blogs__card-text">
                 <p class="blogs__card-date">March 15, 2022</p>
                 <h3 class="blogs__card-title">New & Rumored Sony Lenses, MacBook Sales</h3>
-                <a class="button" href="#" target="_blank">Read More</a>
               </div>
+
+            </a>
 
           </div>
 
@@ -319,7 +324,6 @@
         </div>
 
       </section>
-
 
     </main>
 
@@ -375,33 +379,59 @@
 
     <script>
 
+      // function openPopupNav() {
+      //   const popupNavContainer = document.createElement('div');
+      //   //popupNavContainer.id = 'popupNavContainer';
+
+      //   popupNavContainer.innerHTML = `
+
+      //   <div id="navPopup">
+
+      //       <button class="nav__toggle-close" id="closeNavPopup-btn" type="button" onclick="closePopupNav()"><i class="ri-close-line"></i>
+      //       </button>
+
+      //       <div id="navPopUpLinks">
+      //         <a href="#home" onclick="closePopupNav()">Home</a>
+      //         <a href="#contact" onclick="closePopupNav()">Contact</a>
+      //         <a href="#blogs" onclick="closePopupNav()">Blogs</a>
+      //         <a href="#services" onclick="closePopupNav()">Services</a>
+      //         <a href="#projects" onclick="closePopupNav()">Projects</a>
+      //       </div>
+
+      //       <div class="icon-wrapper">
+      //         <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
+      //            aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
+      //              class="ri-github-fill"></i></a>
+      //         <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
+      //            aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
+      //              class="ri-linkedin-box-fill"></i></a>
+      //       </div>
+
+      //   </div>
+
+      //   `;
+
+      //   document.body.style.overflow = 'hidden';
+
+      //   document.body.appendChild(popupNavContainer);
+      // };
+
       function openPopupNav() {
-        const popupNavContainer = document.createElement('div');
+        let popupNavContainer = document.createElement('div');
+        popupNavContainer.id = 'popupNavContainer';
 
         popupNavContainer.innerHTML = `
-
-        <div id="navPopup">
 
             <button class="nav__toggle-close" id="closeNavPopup-btn" type="button" onclick="closePopupNav()"><i class="ri-close-line"></i>
             </button>
 
             <div id="navPopUpLinks">
               <a href="#home" onclick="closePopupNav()">Home</a>
-              <a href="#about" onclick="closePopupNav()">About</a>
               <a href="#contact" onclick="closePopupNav()">Contact</a>
+              <a href="#blogs" onclick="closePopupNav()">Blogs</a>
+              <a href="#services" onclick="closePopupNav()">Services</a>
               <a href="#projects" onclick="closePopupNav()">Projects</a>
             </div>
-
-            <div class="icon-wrapper">
-              <a class="icon-button" href="https://github.com/rorunsolu" target="_blank" rel="noopener"
-                 aria-label="View my GitHub profile in a new tab" title="GitHub profile link"><i
-                   class="ri-github-fill"></i></a>
-              <a class="icon-button" href="https://www.linkedin.com/in/rorunsolu/" target="_blank" rel="noopener"
-                 aria-label="View my LinkedIn profile in a new tab" title="LinkedIn profile link"><i
-                   class="ri-linkedin-box-fill"></i></a>
-            </div>
-
-        </div>
 
         `;
 
@@ -411,12 +441,10 @@
       };
 
       function closePopupNav() {
-        const navPopup = document.getElementById('navPopup');
-        const navPopupLinks = document.querySelectorAll('#navPopUpLinks div');
-        const navPopUpLink = document;
+        let popupNavContainer = document.getElementById('popupNavContainer');
 
-        if (navPopup) {
-          navPopup.remove();
+        if (popupNavContainer) {
+          popupNavContainer.remove();
 
           document.body.style.overflow = 'auto';
         }
