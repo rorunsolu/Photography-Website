@@ -1,0 +1,38 @@
+.gallery {
+    &__title {
+    }
+
+    &__subtitle {
+        margin-bottom: 4rem;
+    }
+
+    &__image-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--gap-card-wrapper);
+        
+
+        &:hover > .gallery__image:not(:hover) {
+            filter: brightness(0.4);
+        }
+
+        &:focus > .gallery__image:not(:focus) {
+            filter: brightness(0.4);
+        }
+    }
+
+    &__image {
+        aspect-ratio: 4/5;
+
+        border: var(--border-glass);
+
+        transition: var(--transition);
+
+        &:hover {
+            //transform: translateY(-0.5rem);
+            transform: scale3d(1.05, 1.05, 1.05);
+
+            box-shadow: var(--box-shadow);
+        }
+    }
+}

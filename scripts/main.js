@@ -9,6 +9,7 @@ import '/styles/footer.scss';
 
 import '/styles/services.scss';
 import '/styles/projects.scss';
+import '/styles/gallery.scss';
 import '/styles/blogs.scss';
 import '/styles/contact.scss';
 import '/styles/faq.scss';
