@@ -2,7 +2,6 @@
     &__image-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--gap-card-wrapper);
 
         z-index: -2;
@@ -55,12 +54,6 @@
         &:nth-last-child(-n + 6) {
             @media (width < 700px) {
                 display: none;
-            }
-        }
-
-        &:nth-last-child(-n + 9) {
-            @media (width < 500px) {
-                //display: none;
             }
         }
     }

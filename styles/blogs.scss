@@ -15,7 +15,7 @@
         border: var(--border-glass);
         border-radius: var(--border-radius);
 
-        background-color: var(--bg-card);
+        background-color: var(--bg-black);
 
         cursor: pointer;
 
@@ -32,9 +32,5 @@
 
     &__card-title {
         color: var(--color-white);
-    }
-
-    &__card-image {
-        //border-radius: var(--border-radius);
     }
 }
