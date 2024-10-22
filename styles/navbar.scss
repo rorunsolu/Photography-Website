@@ -60,29 +60,6 @@ nav {
     }
 }
 
-#navPopup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    position: absolute;
-    z-index: 990;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: var(--bg-frosted-black);
-
-    -webkit-backdrop-filter: var(--bg-blur);
-    backdrop-filter: var(--bg-blur);
-
-    transition: var(--transition);
-}
-
 #popupNavContainer {
     display: flex;
     flex-direction: column;
