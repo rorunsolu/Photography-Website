@@ -7,7 +7,7 @@
         border: var(--border-glass);
         border-radius: var(--border-radius);
 
-        background-color: var(--bg-frosted-white);
+        background-color: var(--bg-black);
     }
 
     &__header {
@@ -40,13 +40,6 @@
             right: 1rem;
 
             font-size: 2rem;
-
-            color: var(--color-white);
-
-            @media (width < 500px) {
-                right: 45%;
-                bottom: 15px
-            }
         }
     }
 
