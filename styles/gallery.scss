@@ -29,7 +29,6 @@
         transition: var(--transition);
 
         &:hover {
-            //transform: translateY(-0.5rem);
             transform: scale3d(1.05, 1.05, 1.05);
 
             box-shadow: var(--box-shadow);

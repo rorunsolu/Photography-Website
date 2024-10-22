@@ -10,8 +10,10 @@ nav {
 
     width: 100vw;
 
+    height: 4.5rem;
+
     @media (width < 600px) {
-        height: 3rem;
+        height: 3.5rem;
     }
 }
 
@@ -20,28 +22,20 @@ nav {
     justify-content: center;
     align-items: center;
 
-    position: relative;
-
     width: 100%;
-
-    padding: 1.25rem 0;
+    height: 100%;
 
     background-color: var(--color-black);
 
     @media (width < 1000px) {
         justify-content: flex-end;
 
-        border-radius: 0;
-        padding: 1rem 2rem;
+        padding-right: 1rem;
     }
 
-    @media (width < 600px) {
-        padding: 0.5rem 1rem;
-    }
 
     &__list {
         display: flex;
-        justify-content: space-between;
 
         @media (width < 1000px) {
             display: none;
