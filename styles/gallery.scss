@@ -1,7 +1,4 @@
 .gallery {
-    &__title {
-    }
-
     &__subtitle {
         margin-bottom: 4rem;
     }
@@ -10,7 +7,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--gap-card-wrapper);
-        
 
         &:hover > .gallery__image:not(:hover) {
             filter: brightness(0.4);

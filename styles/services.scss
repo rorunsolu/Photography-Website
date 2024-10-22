@@ -13,8 +13,6 @@
         @media (width < 500px) {
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: var(--gap-card-wrapper-medium);
-
-            padding: var(--padding);
         }
     }
 
@@ -31,10 +29,6 @@
             padding: var(--padding);
         }
 
-        @media (width < 500px) {
-            padding: 0;
-        }
-
         &:hover {
             transform: translateY(-0.25rem);
 
@@ -42,8 +36,6 @@
         }
 
         svg {
-            margin-bottom: 1rem;
-
             width: 2.5rem;
             height: 2.5rem;
         }
