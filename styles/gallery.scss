@@ -8,6 +8,8 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--gap-card-wrapper);
 
+        margin-bottom: 3rem;
+
         &:hover > .gallery__image:not(:hover) {
             filter: brightness(0.4);
         }
