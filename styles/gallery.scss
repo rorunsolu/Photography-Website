@@ -12,8 +12,8 @@
             filter: brightness(0.4);
         }
 
-        &:focus > .gallery__image:not(:focus) {
-            filter: brightness(0.4);
+        @media (width < 500px) {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         }
     }
 
