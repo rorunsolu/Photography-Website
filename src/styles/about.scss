@@ -1,15 +1,23 @@
 .about {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
+    gap: 4rem;
 
     @media (width < 500px) {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     &__text-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 

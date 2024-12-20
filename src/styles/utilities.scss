@@ -7,7 +7,7 @@
     position: relative;
 
     @media (width <= 600px) {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -17,6 +17,8 @@
     width: 100%;
 
     position: relative;
+
+    -webkit-box-shadow: var(--box-shadow);
 
     box-shadow: var(--box-shadow);
 }
@@ -28,7 +30,11 @@
 }
 
 .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 0.5rem;
 
@@ -36,14 +42,24 @@
     border-radius: var(--border-radius);
     padding: 0.75rem 1.25rem;
 
+    width: -webkit-fit-content;
+
+    width: -moz-fit-content;
+
     width: fit-content;
 
     background-color: var(--color-black);
     color: var(--color-white);
 
+    -webkit-transition: var(--transition);
+
+    -o-transition: var(--transition);
+
     transition: var(--transition);
 
     &:hover {
+        -webkit-transform: translateY(-0.25rem);
+        -ms-transform: translateY(-0.25rem);
         transform: translateY(-0.25rem);
 
         background-color: var(--bg-card);

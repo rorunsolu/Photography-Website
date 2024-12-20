@@ -4,6 +4,7 @@
     }
 
     &__cards {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: var(--gap-card-wrapper);
@@ -23,6 +24,10 @@
 
         background-color: var(--bg-black);
 
+        -webkit-transition: var(--transition);
+
+        -o-transition: var(--transition);
+
         transition: var(--transition);
 
         @media (width < 800px) {
@@ -30,7 +35,11 @@
         }
 
         &:hover {
+            -webkit-transform: translateY(-0.25rem);
+            -ms-transform: translateY(-0.25rem);
             transform: translateY(-0.25rem);
+
+            -webkit-box-shadow: var(--box-shadow);
 
             box-shadow: var(--box-shadow);
         }

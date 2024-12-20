@@ -4,6 +4,7 @@
     }
 
     &__image-wrapper {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--gap-card-wrapper);
@@ -11,6 +12,7 @@
         margin-bottom: 3rem;
 
         &:hover > .gallery__image:not(:hover) {
+            -webkit-filter: brightness(0.4);
             filter: brightness(0.4);
         }
 
@@ -24,10 +26,17 @@
 
         border: var(--border-glass);
 
+        -webkit-transition: var(--transition);
+
+        -o-transition: var(--transition);
+
         transition: var(--transition);
 
         &:hover {
+            -webkit-transform: scale3d(1.05, 1.05, 1.05);
             transform: scale3d(1.05, 1.05, 1.05);
+
+            -webkit-box-shadow: var(--box-shadow);
 
             box-shadow: var(--box-shadow);
         }
